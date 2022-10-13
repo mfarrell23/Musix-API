@@ -1,12 +1,12 @@
-# Musix-API
+# SuperHero-API
 
-This project was made by Artem, Jonathan, Noah, and Michelle.
-We wanted to make an application that uses APIs to pull song lyrics and artist info, so that the user could pick a song and know the words.
+This project was collaborated and made by Artem, Jonathan, Noah, and Michelle.
+We wanted to make an application that uses APIs to pull super hero stats. To allow fans to find the strengths and weakenss's of their favorite hero or villian. To know their height or even nickname.
 
-## Youtube, and Genius APIs
+## Giphy, and Superhero APIs
 
-We implimented theses APIs into our project because we wanted the user to be able to find their favorite, and other relatable songs. We wanted the ability to have Youtube take you to the video, and have Genius pull up the lyrics.
+We implimented theses APIs into our project so the user can select their favorite Super and see all of their info. We used the Giphy API to show a little humor of the heros. to add a little animation to bring our supers to life.
 
 ### How it works
 
-When the user types in their artist name or song, and clicks search then it takes them to the next page where all of the info will populate. This will give the user the Artist info, and album cover for that song. It will give the user the song lyrics, and other songs like it.
+When the user types in a name it brings them to the next page where the user can see all of the stats, bio, and powers their super has. We added the styling so the background would change due to hte super they picked. When the page loads the gihpy starts up with their super.
