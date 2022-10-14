@@ -3,7 +3,7 @@ var GIPHY_KEY = 'FuJCCJ2qRM1JesFbOw3n5R2AiEgGEUcY';
 
 (function () {
     function giphySearch(superHero) {
-      return fetch(`http://api.giphy.com/v1/gifs/search?q=${superHero}&api_key=${GIPHY_KEY}&limit=1`)
+      return fetch(`http://api.giphy.com/v1/gifs/search?q=${superHero}&api_key=${GIPHY_KEY}&limit=2`)
         .then(response => response.json());
     }
 
