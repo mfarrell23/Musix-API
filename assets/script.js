@@ -1,4 +1,5 @@
 var GIPHY_KEY = 'FuJCCJ2qRM1JesFbOw3n5R2AiEgGEUcY';
+ var searchBtn= document.querySelector("#find");
 
 (function () {
     function giphySearch(superHero) {
@@ -26,3 +27,4 @@ var GIPHY_KEY = 'FuJCCJ2qRM1JesFbOw3n5R2AiEgGEUcY';
 
     }
   })();
+  

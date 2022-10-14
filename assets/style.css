@@ -1,4 +1,19 @@
-.top{
+ #header{
     background-color: aqua;
-    padding: 8px
-};
+    padding: 12px;
+}
+#find{
+     background-color: blue;
+     color: aliceblue;
+}
+.col{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+#input-get1{
+    background-color: aqua;
+}
+.info{
+    margin-left: 30px;
+    padding-top: 10px;
+}
