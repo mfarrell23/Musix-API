@@ -16,6 +16,6 @@ Artem- Proj. manager, he worked on getting the Giphy api up and working with our
 
 Jonathan- He got the superhero api up and working with our website to pull the desired super and their info to our pages.
 
-Noah- He styled our pages using tailwind and made the background change depending on the super searched.
+Noah- He styled our pages using tailwind and made the background change depending on the super searched. He also rearranged and styled the 2nd page, where our functions display the searched data.
 
-Michelle- git hub manager, she made sure we were all in constant communication, and moved the tasks around in the board. She built the bones for our site so the others had a structure to work from.
+Michelle- git hub manager, she made sure we were all in constant communication, and moved the tasks around in the board. She built the bones for our home page, and styled it. She started the 2nd page so the others had structures to work from.

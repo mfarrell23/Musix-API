@@ -1,6 +1,9 @@
  #header{
     background-color: aqua;
     padding: 12px;
+    font-size: 50px;
+    text-align: center;
+    color: crimson;
 }
 #find{
      background-color: blue;
