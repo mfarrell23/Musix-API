@@ -38,10 +38,71 @@
       <!-- Superhero image -->
       <div class="w-full lg:w-2/5">
           <!-- GIFs/pictures go here -->
-          <img src="http://placekitten.com/g/300/500" class="rounded-none lg:rounded-md shadow-2xl hidden lg:block">
-          
+          <img src="http://placekitten.com/g/300/500" class="rounded-none lg:rounded-md shadow-2xl hidden lg:block">         
       </div>
     
+    <div class="main-container">
+        <div class="info-container">
+            <div class="name-display">
+                <p class="hero-name"></p>
+                <figure class="hero-image"></figure>
+            </div>
+        </div>
+        <div class="bio-container">
+            <div class="publishing-display">
+                <p class="publishing-header"></p>
+                <div class="publishing-info">
+                    <!-- publishing info goes here -->
+                </div>
+            </div>
+            <div class="bio-display">
+                <p class="bio-header"></p>
+                <div class="bio-info">
+                    <!-- bio info goes here -->
+                </div>
+            </div>
+        </div>
+        <div class="stats-container">
+            <div class="chart-div">
+                <canvas class="stats-chart"></canvas>
+            </div>
+            <div class="stats-div">
+                <div class="key-stats">
+                    <!-- stats go here -->
+                </div>
+            </div>
+        </div>
+        <div class="gif-container">
+            <div class="gif-div">
+                <div class="gif1">
+                    <figure class="image"></figure>
+                </div>
+                <div class="gif2">
+                    <figure class="image"></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- gif container to hold 2 stacked gif tiles -->
+        <div class="tile" id="gif-div">
+            <div class="tile is-parent is-vertical">
+                <div class="tile is-child box gifbox">
+                    <figure class="image" id="gif-div0">
+                        <!-- gif goes here -->
+                    </figure>
+                </div>
+                <div class="tile is-child box gifbox">
+                    <figure class="image" id="gif-div2">
+                        <!-- gif goes here -->
+                    </figure>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+
       
 <!-- pins the switch to the top right -->
         <div class="absolute top-0 right-0 h-12 w-18 p-4">
