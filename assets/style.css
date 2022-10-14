@@ -1,4 +1,9 @@
-.top{
+ * 
+ #header{
     background-color: aqua;
-    padding: 8px
+    padding: 12px;
+    align-items: center;
+};
+.col{
+    background-color: blue;
 };
