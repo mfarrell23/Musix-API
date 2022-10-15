@@ -28,9 +28,11 @@
 .giphys{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    padding: 25px
+    justify-content: left;
+    flex-flow: wrap;
+    padding: 25px;
+    flex-direction: column;
+    align-content: flex-start;
 }
 
 .title{
