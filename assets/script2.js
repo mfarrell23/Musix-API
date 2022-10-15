@@ -39,7 +39,7 @@ function displayparagraph (jsonData){//function that helps with data thats pulle
 
 var back_btn = document.querySelector("#back");//back button to go tp first html
 back_btn.addEventListener("click",function(){
-    location.replace('./index.html', "_self");
+    location.replace('../index.html', "_self");
     
 })
 

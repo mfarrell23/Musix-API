@@ -51,7 +51,7 @@ function displayparagraph (jsonData){//this function is able to take and object 
 document.addEventListener('click', (event) => {//this listens for when the user hits a specific hero/villin name
   if(event.target.id == 'details_btn'){
       var id = event.target.parentNode.id;//pulls the card pressed id to later call it
-      window.open('./index2.html', "_self");//opens second html page
+      window.open('./assets/index2.html', "_self");//opens second html page
       console.log(id)
       localStorage.setItem('Hero id:', id);//saves id to local storage
   }});
