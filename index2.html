@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Super Hero Display</title>
+</head>
+<body>
+    <header> 
+        <!-- Back button -->
+            <button id="back">Back</button>
+    </header>
+  
+<div class="blob w-[800px] h-[800px] rounded-[999px] absolute top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200"></div>
+<div class="blob w-[1000px] h-[1000px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-red-200 via-yellow-100 to-blue-100"></div>
+<div class="blob w-[600px] h-[600px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-yellow-100 via-blue-100 to-red-100"></div>
+<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+
+
+   
+
+
+    <!--Main Col-->
+      <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+          <div class="p-4 md:p-12 text-center lg:text-left">
+              
+                <!-- Smaller image for when screen gets smaller -->
+              <div class="block lg:hidden rounded-lg shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('http://placekitten.com/g/200/200')"></div>	
+              
+              <h1 class="text-3xl font-bold pt-8 lg:pt-0" id="name"></h1>
+              <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-blue-500 opacity-25"></div>
+            </div>
+      </div>
+      
+      
+    
+     <!-- Superhero image -->
+     <div id="image">
+        <img>
+    </div>
+    
+    <div class="main-container">
+        <!-- bio container -->
+        <div class="info-container">
+            <div class="name-display">
+                <!-- bio title -->
+                <p class="title">Biography:</p>
+                <!-- Bio data -->
+                <div id="bio"></div>
+            </div>
+        </div>
+        <!-- stats container -->
+        <div class="stats-container">
+             <div class="key-stats">
+                <!-- stats title -->
+                <p class="title">Stats:</p>
+                <!-- stats data-->
+                <div id="stats"></div>
+            </div>
+        </div>
+        <!-- connections conatinaer -->
+        <div class="connections-container">
+            <div class="connections-display">
+                <!-- connections title -->
+                <p class="title">Connections:</p>
+                <!-- connections data -->
+                <div id="connections"></div>
+            </div>
+        </div>
+        <!-- apperence container -->
+        <div class="Apperence-container">
+             <div class="key-stats">
+                <!-- apperence container -->
+                <p class="title">Apperence:</p>
+                <!-- apperence data -->
+                <div id="apperence"></div>
+            </div>
+        </div>
+        <!-- work container -->
+        <div class="work-container">
+            <div class="key-stats">
+               <!-- work title -->
+               <p class="title">Work:</p>
+               <!-- work data -->
+               <div id="work"></div>
+           </div>
+       </div>
+
+
+        <!-- gif container to hold 2 stacked gif tiles -->
+        <div class="tile" id="gif-div">
+            <div class="tile is-parent is-vertical">
+                <div class="tile is-child box gifbox">
+                    <figure class="image" id="gif-div0">
+                        <div class="heroGif"></div>
+                    </figure>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+
+      
+<!-- pins the switch to the top right -->
+        <div class="absolute top-0 right-0 h-12 w-18 p-4">
+          <button class="theme-changer focus:outline-none">🌙</button>
+        </div>
+  
+  
+       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+       <script src="./assets/script2.js"></script>
+      
+  </body>
+  
+  </html>

@@ -29,16 +29,6 @@ function getCard(data){
           <img src="${data.image.url}">
       </div>
       <div id="details_btn" class="card-name">${data.name}</div>
-      <div id="details_btn" class="card->intelligence"><p>Intelligence:${data.powerstats.intelligence}</p></div>
-       <div id="details_btn" class="card-name"><p>Strength:${data.powerstats.strength}</p></div>
-       <div id="details_btn" class="card-name"><p>Speed:${data.powerstats.speed}</p></div>
-       <div id="details_btn" class="card-name"><p>Strength:${data.powerstats.strength}</p></div>
-       <div id="details_btn" class="card-name"><p>Power:${data.powerstats.power}</p></div>
-       <div id="details_btn" class="card-name"><p>Combat:${data.powerstats.combat}</p></div>
-       <div id="details_btn" class="card-biography">${bio}</div>
-       <div id="details_btn" class="card-appearance">${appearance}</div>
-       <div id="details_btn" class="card-work">${work}</div>
-       <div id="details_btn" class="card-connections">${connections}</div>
        
   `
 
