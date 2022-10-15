@@ -1,4 +1,4 @@
- #header{
+#header{
     background-color: aqua;
     padding: 12px;
     font-size: 50px;
@@ -30,4 +30,9 @@
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
+    padding: 25px
+}
+
+.title{
+    font-size: 40px;
 }
