@@ -1,0 +1,33 @@
+ #header{
+    background-color: aqua;
+    padding: 12px;
+    font-size: 50px;
+    text-align: center;
+    color: crimson;
+}
+#find{
+     background-color: blue;
+     color: aliceblue;
+}
+.col{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+#input-get1{
+    background-color: aqua;
+}
+.info{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+
+.giphys img{
+    height: 300px;
+}
+.giphys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
