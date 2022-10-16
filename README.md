@@ -9,7 +9,7 @@ We implemented theses APIs into our project so the user can select their favorit
 
 ### How it works
 
-When the user types in a name it brings them to the next page where the user can see all of the stats, bio, and powers their super has. We added the styling so the background would change due to The super they picked. When the page loads the giphy starts up with their super.
+When the user types in a name it brings them a list of giphys to pick which version of the super. Once the user click on the name below the giphy, it takes the user to the next page where the user can see all of the stats, bio, and powers their super has. We added the styling so the background would change due to The super they picked. When the page loads the giphy starts up with their super.
 
 #### Collabs and their contributions
 Artem- Proj. manager, he worked on getting the Giphy api up and working with our website to pull the specific hero from the site to our pages. He linked our HTML pages so the UI can go back and forth. He helped each of us when we had issues.
