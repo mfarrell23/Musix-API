@@ -62,3 +62,19 @@ async function main(superHero) {//this function allows the gifs to be save to th
       });
 
 };
+
+// this function is for light and dark mode
+// const sunIcon = document.querySelector(".sun");
+// const moonIcon = document.querySelector(".moon");
+
+//   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+//     document.documentElement.classList.add('dark')
+//   } else {
+//     document.documentElement.classList.remove('dark')
+//   }
+  
+// sunIcon.addEventListener("click", () => {
+//     localStorage.theme = 'light' })
+  
+// moonIcon.addEventListener("click", () => {
+//     localStorage.theme = 'dark' })
