@@ -44,7 +44,6 @@ h1,
    
 }
 
-
 #input-get1{
     border: 2px solid gray;
     padding: 1rem 2rem;
@@ -52,58 +51,19 @@ h1,
     min-width: 420px;
     
 }
-/* #header{
-    background-color: aqua;
-    padding: 8px;
-    font-size: 50px;
-    text-align: center;
-    color: crimson;
-}
-#find{
-     background-color: blue;
-     color: aliceblue;
-}
-.col{
-    margin-left: 30px;
-    padding-top: 10px;
-}
-#input-get1{
-    background-color: aqua;
-}
-.info{
-    margin-left: 30px;
-    padding-top: 10px;
-} */
 
-/* .backGround{
-      background-attachment: fixed;
-      background: url('https://images5.alphacoders.com/884/thumb-1920-884540.jpg') no-repeat center center fixed;
-      background-size: 100%; 
-      overscroll-behavior-block:inherit;
-}  */
-/*
-
-.giphys img{
-    width: 300px;
-}
-.giphys{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-flow: wrap;
-    padding: 25px;
-    flex-direction: column;
-    align-content: flex-start;;
+ .backGround{
+      /* background-attachment: fixed; */
+      background: url('https://images5.alphacoders.com/884/thumb-1920-884540.jpg') no-repeat right top;
+      background-size: 70%; 
+      /* overscroll-behavior-block:inherit; */
+      align-items: left;
+      margin-bottom: 80px;
 }
 
-.p{
+#p{
     font-size: 20px;
-    color: darkgreen;
+    color:#b608a5;
     flex-wrap: wrap;
+    text-align: left;
 }
-.p1{
-    font-size: 20px;
-    color: darkblue;
-} /*
-
-
