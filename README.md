@@ -22,6 +22,6 @@ Noah- He styled our pages using tailwind and made the background change dependin
 Michelle- git hub manager, she made sure we were all in constant communication, and moved the tasks around in the board. She built the home page, and styled it. She started the 2nd page html so the others had structures to work from.
 She made sure the merging went as smoothe as possible.
 
-deployed - https://mfarrell23.github.io/superHeros/
+deployed -  https://mfarrell23.github.io/superHeros/
 
 readme.md ![screenshot](page1.png) ![screenshot](page2.png)
