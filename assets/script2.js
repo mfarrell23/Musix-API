@@ -48,7 +48,7 @@ var GIPHY_KEY = 'FuJCCJ2qRM1JesFbOw3n5R2AiEgGEUcY';//access key for gify
 
 
 function giphySearch(superHero) {//pull gifs from the api
-    return fetch(`http://api.giphy.com/v1/gifs/search?q=${superHero}&api_key=${GIPHY_KEY}&limit=2`)//limit sets amount of gifs pulled
+    return fetch(`https://api.giphy.com/v1/gifs/search?q=${superHero}&api_key=${GIPHY_KEY}&limit=2`)//limit sets amount of gifs pulled
     .then(response => response.json());
 }
 
