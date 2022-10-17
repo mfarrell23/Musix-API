@@ -1,33 +1,71 @@
- #header{
-    background-color: aqua;
-    padding: 12px;
-    font-size: 50px;
-    text-align: center;
-    color: crimson;
+* {
+    font-family: 'ABeeZee', sans-serif;
+    
 }
-#find{
-     background-color: blue;
-     color: aliceblue;
-}
-.col{
-    margin-left: 30px;
-    padding-top: 10px;
-}
-#input-get1{
-    background-color: aqua;
-}
-.info{
-    margin-left: 30px;
-    padding-top: 10px;
+
+h1,
+.title,
+#back {
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 
-.giphys img{
-    height: 300px;
+#results {
+    padding-left: 3rem;
+    width: 25%;
+    padding-left: 10rem;
+    max-height: 400px;
+    overflow-y: scroll;
+    visibility: "visible";
+    
 }
-.giphys{
+
+.search-items::-webkit-scrollbar{
+    width: 7px;
+}
+#results::-webkit-scrollbar{
+    width: 7px;
+
+}
+
+#results::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 64px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-container{
+    width: 150px;
+    margin-right: 5rem;
+}
+
+.card-name {
+    cursor: pointer;
+    font-weight: 800;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
+    align-content: flex-end ;
+   
+}
+
+#input-get1{
+    border: 2px solid gray;
+    padding: 1rem 2rem;
+    position: relative;
+    min-width: 420px;
+    
+}
+
+ .backGround{
+      /* background-attachment: fixed; */
+      background: url('https://images5.alphacoders.com/884/thumb-1920-884540.jpg') no-repeat right top;
+      background-size: 70%; 
+      /* overscroll-behavior-block:inherit; */
+      align-items: left;
+      margin-bottom: 80px;
+}
+
+#p{
+    font-size: 20px;
+    color:#b608a5;
+    flex-wrap: wrap;
+    text-align: left;
 }

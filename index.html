@@ -6,43 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
     <title>Super Hero Database</title>
 </head>
 <body class="backGround" background="https://images5.alphacoders.com/884/thumb-1920-884540.jpg">
     
     <!-- Title -->
-    <header id="header">
-        <h1>Search for your favorite Superhero or Villain</h1>
+    <header class="header mb-10">
+        <h1 class="text-center mt-20 text-slate-900 text-8xl font-medium">Superhero Finder!</h1>
     </header>
     
     <!-- Description -->
-
-    <div class="container" id="website-description">
-        <section class="info">
-            <p>Ever wonder what each super hero or Villian's height is? or maybe what their weakness's are? Well look no further, 
-            </p>
-            <p> we have just the app for you! Search any Super's name and get their stats, bio, and even a giphy of them!!
-            </p>
-        </section>
-        <main>
-            <!--Search field-->
+    <div>
+        <p id="p"class="text-center mb-20 text-xl mr-5 ml-5">Ever wonder what your favorite superhero or villian's fighting   stats are?<br>
+                Well look no further, we have just the app for you!<br>
+                Search any Super's name and get their stats, bio, and even a giphy of them!!
+        </p>
     </div>
-            <div class="col">
-                <p>Search by Super</p>
-                <form id="searchForm">
-                    <input type="text" id="input-get1" placeholder="Super's Name">
-                    <button  class="rounded-full " id="find">Search</button>
-                </form>
-                <div class="saved-hero"> </div>
+    <!--Search field-->
+
+    <div class="content relative w-full flex justify-left py-0 px-[60px]">
+        <div class="textBox relative max-w-[800px]">
+            <p id="p" class="text-slate-900 text-xl">Search for your favorite Super Hero or villian:</p>
+        </div>
+        <div class="ml-20">
+            <form id="searchForm">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"type="text" id="input-get1" placeholder="Super's Name">
+            </form>
+        </div>
+    </div>
+
+    <div class="saved-hero"></div>
+    <div id="result-container"></div>
+
+    <div id="results" class="flex-wrap grid sm:grid-cols-2 md:grid-cols-4 m-10 justify-center">
+            <div class="justify-center flex m-4">
+                <img class="object-cover shadow-xl shadow-red-500/50 rounded-xl" src="https://media3.giphy.com/media/13UoiCY2pJSwZW/giphy.gif?cid=ecf05e47ewql8m7qjhljmol4k7sed5u59m2fmsdobw8l4ch2&rid=giphy.gif&ct=g" alt="funny animation GIF">
             </div>
-   
-    
-            <div class="giphys">
-                <img src="https://media3.giphy.com/media/13UoiCY2pJSwZW/giphy.gif?cid=ecf05e47ewql8m7qjhljmol4k7sed5u59m2fmsdobw8l4ch2&rid=giphy.gif&ct=g" alt="funny animation GIF">
-                <img src="https://media2.giphy.com/media/2Y8qAmMuyl5MGAoBeF/200w.webp?cid=ecf05e47eo4hi19ttqfn2tn4az13uv1ez31y5v6jygvtng3c&rid=200w.webp&ct=g" alt="funny animation GIF">
-                <img src="https://media0.giphy.com/media/XSc4Kkc5u2WZy/200w.webp?cid=ecf05e47n1ivmcmbi17egu9mktr4b9sb3lrrk0v3oyzh5vqd&rid=200w.webp&ct=g" alt="funny animation GIF">
-                <img src="https://media4.giphy.com/media/BWD3CtcudWL28/200.webp?cid=ecf05e47vpbdf51qd6zggkte4dea4j2nhshcqnfrmws1uajk&rid=200.webp&ct=g" alt="funny animation GIF">
+            <div class="justify-center flex m-4">
+                <img class="object-cover shadow-xl shadow-blue-500/50 rounded-xl" src="https://media2.giphy.com/media/2Y8qAmMuyl5MGAoBeF/200w.webp?cid=ecf05e47eo4hi19ttqfn2tn4az13uv1ez31y5v6jygvtng3c&rid=200w.webp&ct=g" alt="funny animation GIF">
             </div>
+            <div class="justify-center flex m-4">
+                <img class="object-cover shadow-xl shadow-emerald-500/50 rounded-xl" src="https://media0.giphy.com/media/XSc4Kkc5u2WZy/200w.webp?cid=ecf05e47n1ivmcmbi17egu9mktr4b9sb3lrrk0v3oyzh5vqd&rid=200w.webp&ct=g" alt="funny animation GIF">
+            </div>
+            <div class="justify-center flex m-4">
+                <img class="object-cover shadow-xl shadow-amber-500/50 rounded-xl" src="https://media4.giphy.com/media/BWD3CtcudWL28/200.webp?cid=ecf05e47vpbdf51qd6zggkte4dea4j2nhshcqnfrmws1uajk&rid=200.webp&ct=g" alt="funny animation GIF">
+            </div>
+    </div>
         
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
