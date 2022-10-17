@@ -23,7 +23,7 @@ function getCard(data){//gets the data and assigns certin parts to certin divs
     document.getElementById('bio').innerHTML = displayparagraph(data.biography);
     document.getElementById('stats').innerHTML = displayparagraph(data.powerstats);
     document.getElementById('connections').innerHTML = displayparagraph(data.connections);
-    document.getElementById('apperence').innerHTML = displayparagraph(data.appearance);
+    document.getElementById('appearance').innerHTML = displayparagraph(data.appearance);
     document.getElementById('work').innerHTML = displayparagraph(data.work);
     const search=`${data.name}`; //pulls the name and saves it inot search
     main(search);//calls the nect function to get gifs

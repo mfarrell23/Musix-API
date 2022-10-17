@@ -56,7 +56,7 @@
     console.log(searchForm);
     searchForm.addEventListener('keyup',(e) =>{
         const searchItem= e.target.value;
-        if(searchItem.length <3){
+        if(searchItem.length < 4){
             document.getElementById('results').innerHTML= ''
             results.style.visibility = "visible"
         }
