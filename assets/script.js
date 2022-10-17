@@ -11,7 +11,7 @@
           var results = document.createElement('DIV');
           results.id = 'results';
           result_container.appendChild(results);
-          data.results.for((element) => {//each card that has been brough wiht the api will be run through the next function
+          data.results.forEach((element) => {//each card that has been brough wiht the api will be run through the next function
               results.appendChild(getCard(element));
           });
   }
