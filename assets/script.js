@@ -1,13 +1,5 @@
-$('#searchForm').submit(async (event) => {//what to do when submit button is pressed
-    event.preventDefault();
-  
-    var results = document.getElementById('results');//clears previous search if any
-    results.remove();//clears previous search if any
-  
-    var input = $('#input-get1');//gets user input and saves it in input
-    searchHero(input.val());//calls for search hero function
-  });
-  
+
+
   async function searchHero(searchString){//this functions calls for the api with the users input and returns the result
     
       var response = await fetch('https://superheroapi.com/api.php/3309439356005776/search/'+ searchString);
@@ -19,7 +11,7 @@ $('#searchForm').submit(async (event) => {//what to do when submit button is pre
           var results = document.createElement('DIV');
           results.id = 'results';
           result_container.appendChild(results);
-          data.results.forEach((element) => {//each card that has been brough wiht the api will be run through the next function
+          data.results.for((element) => {//each card that has been brough wiht the api will be run through the next function
               results.appendChild(getCard(element));
           });
   }
@@ -53,5 +45,22 @@ $('#searchForm').submit(async (event) => {//what to do when submit button is pre
         var id = event.target.parentNode.id;//pulls the card pressed id to later call it
         window.open('./assets/index2.html', "_self");//opens second html page
         console.log(id)
+        var results = document.getElementById('results');//clears previous search if any
+        results.remove();
         localStorage.setItem('Hero id:', id);//saves id to local storage
     }});
+
+    console.log(searchForm);
+    searchForm.addEventListener('keyup',(e) =>{
+        const searchItem= e.target.value;
+        if(searchItem.length <3){
+            document.getElementById('results').innerHTML= ''
+            results.style.visibility = "visible"
+        }
+        if (searchItem.value == 0) {
+            results.style.visibility = "hidden"
+        }
+        else{
+            searchHero(searchItem)
+        }
+    });
