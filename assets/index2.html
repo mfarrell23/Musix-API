@@ -6,86 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
     <title>Super Hero Display</title>
 </head>
 <body>
-    <header> 
-        <!-- Back button -->
-            <button id="back">Back</button>
-    </header>
-  
-<div class="blob w-[800px] h-[800px] rounded-[999px] absolute top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200"></div>
-<div class="blob w-[1000px] h-[1000px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-red-200 via-yellow-100 to-blue-100"></div>
-<div class="blob w-[600px] h-[600px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-yellow-100 via-blue-100 to-red-100"></div>
-<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-
-
-   
-
-
+        <!-- Navbar -->
+        <header class="z-10">
+            <nav class="navbar bg-transparent flex items-center justify-between">
+                <div class="topBar m-5">
+                    <button id="back" class="px-4 py-3 bg-transparent rounded-xl hover:shadow-lg hover:tracking-widest border-gray-900 border text-gray-900 hover:bg-gray-900 hover:text-white">Back</button>
+                </div>
+            </nav>
+        </header>
     <!--Main Col-->
-      <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
-          <div class="p-4 md:p-12 text-center lg:text-left">
-              
-                <!-- Smaller image for when screen gets smaller -->
-              <div class="block lg:hidden rounded-lg shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('http://placekitten.com/g/200/200')"></div>	
-              
-              <h1 class="text-3xl font-bold pt-8 lg:pt-0" id="name"></h1>
-              <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-blue-500 opacity-25"></div>
-            </div>
-      </div>
-      
-      
-    
-     <!-- Superhero image -->
-     <div id="image">
-        <img>
-    </div>
-    
-    <div class="main-container">
+    <div class="main-container sm:grid-cols-1 md:grid-cols-2 grid m-6 flex">
+        <!-- Superhero image -->
+        <div id="image">
+            <img>
+        </div>
         <!-- bio container -->
-        <div class="info-container">
-            <div class="name-display">
+        <div class="bio-container bg-opacity-50 bg-red-100 flex rounded-lg shadow-md m-4 p-2">
+            <div class="name-display container">
                 <!-- bio title -->
-                <p class="title">Biography:</p>
+                <p class="title container h-10 text-center align-middle pt-1">Biography:</p>
                 <!-- Bio data -->
-                <div id="bio"></div>
+                <div id="bio mt-2 p-2"></div>
             </div>
         </div>
         <!-- stats container -->
-        <div class="stats-container">
-             <div class="key-stats">
+        <div class="stats-container bg-opacity-50 bg-blue-100 flex rounded-lg shadow-md m-4 p-2">
+             <div class="key-stats container">
                 <!-- stats title -->
-                <p class="title">Stats:</p>
+                <p class="title container h-10 text-center align-middle pt-1">Stats:</p>
                 <!-- stats data-->
-                <div id="stats"></div>
+                <div id="stats container mt-2 p-2"></div>
             </div>
         </div>
         <!-- connections conatinaer -->
-        <div class="connections-container">
-            <div class="connections-display">
+        <div class="connections-container bg-opacity-50 bg-yellow-100 flex rounded-lg shadow-md m-4 p-2">
+            <div class="connections-display container">
                 <!-- connections title -->
-                <p class="title">Connections:</p>
+                <p class="title container h-10 text-center align-middle pt-1">Connections:</p>
                 <!-- connections data -->
-                <div id="connections"></div>
+                <div id="connections mt-2 p-2"></div>
             </div>
         </div>
         <!-- apperence container -->
-        <div class="Apperence-container">
-             <div class="key-stats">
+        <div class="Apperence-container bg-opacity-50 bg-green-100 flex rounded-lg shadow-md m-4 p-2">
+             <div class="key-stats container">
                 <!-- apperence container -->
-                <p class="title">Apperence:</p>
+                <p class="title container h-10 text-center align-middle pt-1">Appearence:</p>
                 <!-- apperence data -->
-                <div id="apperence"></div>
+                <div id="apperence border-2 mt-2 p-2"></div>
             </div>
         </div>
         <!-- work container -->
-        <div class="work-container">
-            <div class="key-stats">
+        <div class="work-container bg-opacity-50 bg-violet-100 flex rounded-lg shadow-md m-4 p-2">
+            <div class="key-stats container">
                <!-- work title -->
-               <p class="title">Work:</p>
+               <p class="title container h-10 text-center align-middle pt-1">Work:</p>
                <!-- work data -->
-               <div id="work"></div>
+               <div id="work mt-2 p-2"></div>
            </div>
        </div>
 
@@ -103,6 +86,10 @@
     </div>
 </div>
 
+<!-- <div class="blob w-[800px] h-[800px] rounded-[999px] absolute top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200"></div>
+<div class="blob w-[1000px] h-[1000px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-red-200 via-yellow-100 to-blue-100"></div>
+<div class="blob w-[600px] h-[600px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-yellow-100 via-blue-100 to-red-100"></div>
+<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"> -->
       
 <!-- pins the switch to the top right -->
         <div class="absolute top-0 right-0 h-12 w-18 p-4">
