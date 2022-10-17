@@ -7,11 +7,14 @@
   }
   
   function renderData(data){// gets all of the data and runs it to be able to take out all the cards
+          var results= document.getElementById('results');
+        results.remove();
+            
           var result_container = document.getElementById('result-container');
           var results = document.createElement('DIV');
           results.id = 'results';
           result_container.appendChild(results);
-          data.results.for((element) => {//each card that has been brough wiht the api will be run through the next function
+          data.results.forEach((element) => {//each card that has been brough wiht the api will be run through the next function
               results.appendChild(getCard(element));
           });
   }
