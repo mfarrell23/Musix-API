@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,96 +11,114 @@
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
     <title>Super Hero Display</title>
 </head>
-<body>
+<body class="bg-gray-100 dark:bg-black ">
         <!-- Navbar -->
-        <header class="z-10">
-            <nav class="navbar bg-transparent flex items-center justify-between">
-                <div class="topBar m-5">
-                    <button id="back" class="px-4 py-3 bg-transparent rounded-xl hover:shadow-lg hover:tracking-widest border-gray-900 border text-gray-900 hover:bg-gray-900 hover:text-white">Back</button>
+    <header class="z-10">
+        <nav class="navbar bg-transparent flex items-center justify-between">
+            <div class="topBar m-5">
+                <div class="relative group">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg blur opacity-70
+                    group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    <button id="back" class="relative px-4 py-3 bg-black rounded-xl hover:tracking-widest text-cyan-600 group-hover:text-gray-100 transition duration-200">Back</button>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+    <!-- Superhero image -->
+    <header>
+        <div class="flex items-center flex-wrap justify-center align gap-20 m-10 sm:m-5">
+            <h1 id="name" class="text-center text-gray-100 text-8xl align-middle"></h1>
+            <div id="image" class="object-center border-4 border-gray-300"><img></div>
+        </div>
+    </header>
     <!--Main Col-->
-    <div class="main-container sm:grid-cols-1 md:grid-cols-2 grid m-6 flex">
-        <div id="name"></div>
-        <!-- Superhero image -->
-        <div id="image">
-            <img>
-        </div>
+    <div class="main-container grid sm:grid-cols-1 md:grid-cols-2 m-6 content-center">
         <!-- bio container -->
-        <div class="bio-container bg-opacity-50 bg-red-100 flex rounded-lg shadow-md m-4 p-2">
-            <div class="name-display container">
-                <!-- bio title -->
-                <p class="title container h-10 text-center align-middle pt-1">Biography:</p>
-                <!-- Bio data -->
-                <div id="bio"></div>
+        <div class="relative group">
+            <div class="absolute inset-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg blur opacity-60
+            group-hover:opacity-90 transition duration-1000 group-hover:duration-200"></div>
+            <div class="relative bio-container bg-black rounded-lg m-4 p-2 z-10">
+                <div class="name-display container">
+                    <!-- bio title -->
+                    <p class="title container h-10 text-center align-middle pt-1 text-xl text-cyan-600 group-hover:text-gray-100 transition duration-200">Biography:</p>
+                    <!-- Bio data -->
+                    <div id="bio" class="text-md text-gray-100 p-3"></div>
+                </div>
             </div>
         </div>
-        <!-- stats container -->
-        <div class="stats-container bg-opacity-50 bg-blue-100 flex rounded-lg shadow-md m-4 p-2">
-             <div class="key-stats container">
-                <!-- stats title -->
-                <p class="title container h-10 text-center align-middle pt-1">Stats:</p>
-                <!-- stats data-->
-                <div id="stats"></div>
+        <div class="relative group">
+            <div class="absolute inset-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg blur opacity-60
+            group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <!-- stats container -->
+            <div class="relative stats-container bg-black flex rounded-lg m-4 p-2">
+                <div class="key-stats container">
+                    <!-- stats title -->
+                    <p class="title container h-10 text-center align-middle pt-1 text-xl text-cyan-600 group-hover:text-gray-100 transition duration-200">Stats:</p>
+                    <!-- stats data-->
+                    <div id="stats" class="text-md text-gray-100 p-3"></div>
+                </div>
             </div>
         </div>
-        <!-- connections conatinaer -->
-        <div class="connections-container bg-opacity-50 bg-yellow-100 flex rounded-lg shadow-md m-4 p-2">
-            <div class="connections-display container">
-                <!-- connections title -->
-                <p class="title container h-10 text-center align-middle pt-1">Connections:</p>
-                <!-- connections data -->
-                <div id="connections"></div>
+        <div class="relative group">
+            <div class="absolute inset-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg blur opacity-60
+            group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <!-- connections conatinaer -->
+            <div class="relative connections-container bg-black flex rounded-lg m-4 p-2">
+                <div class="connections-display container">
+                    <!-- connections title -->
+                    <p class="title container h-10 text-center align-middle pt-1 text-xl text-cyan-600 group-hover:text-gray-100 transition duration-200">Connections:</p>
+                    <!-- connections data -->
+                    <div id="connections" class="text-md text-gray-100 p-3"></div>
+                </div>
             </div>
         </div>
-        <!-- apperence container -->
-        <div class="Apperence-container bg-opacity-50 bg-green-100 flex rounded-lg shadow-md m-4 p-2">
-             <div class="key-stats container">
-                <!-- apperence container -->
-                <p class="title container h-10 text-center align-middle pt-1">Appearence:</p>
-                <!-- apperence data -->
-                <div id="apperence"></div>
+        <div class="relative group">
+            <div class="absolute inset-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg blur opacity-60
+            group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <!-- apperence container -->
+            <div class="relative appearance-container bg-black flex rounded-lg m-4 p-2">
+                <div class="key-stats container">
+                    <!-- apperence container -->
+                    <p class="title container h-10 text-center align-middle pt-1 text-xl text-cyan-600 group-hover:text-gray-100 transition duration-200">Appearence:</p>
+                    <!-- apperence data -->
+                    <div id="appearance" class="text-md text-gray-100 p-3"></div>
+                </div>
             </div>
         </div>
-        <!-- work container -->
-        <div class="work-container bg-opacity-50 bg-violet-100 flex rounded-lg shadow-md m-4 p-2">
-            <div class="key-stats container">
-               <!-- work title -->
-               <p class="title container h-10 text-center align-middle pt-1">Work:</p>
-               <!-- work data -->
-               <div id="work"></div>
-           </div>
-       </div>
-
-
+        <div class="relative group">
+            <div class="absolute inset-1 bg-gradient-to-r from-indigo-600 to-blue-600  rounded-lg blur opacity-60
+            group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+            <!-- work container -->
+            <div class="relative work-container bg-black flex rounded-lg shadow-md m-4 p-2">
+                <div class="key-stats container">
+                <!-- work title -->
+                    <p class="title container h-10 text-center align-middle pt-1 text-xl text-cyan-600 group-hover:text-gray-100 transition duration-200">Work:</p>
+                <!-- work data -->
+                    <div id="work" class="text-md text-gray-100 p-3"></div>
+                </div>
+            </div>
+        </div>
         <!-- gif container to hold 2 stacked gif tiles -->
         <div class="tile" id="gif-div">
-            <div class="tile is-parent is-vertical">
-                <div class="tile is-child box gifbox">
-                    <figure class="image" id="gif-div0">
-                        <div class="heroGif"></div>
-                    </figure>
-                </div>
-            </div>  
+            <div class="justify-center flex">
+                <div class="heroGif object-center border-4 border-gray-300"></div>
+            </div>
         </div>
     </div>
 </div>
+      
 
-<!-- <div class="blob w-[800px] h-[800px] rounded-[999px] absolute top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-blue-200 via-red-200 to-yellow-200"></div>
-<div class="blob w-[1000px] h-[1000px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-red-200 via-yellow-100 to-blue-100"></div>
-<div class="blob w-[600px] h-[600px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-yellow-100 via-blue-100 to-red-100"></div>
-<div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"> -->
+<!-- <div class="absolute top-0 right-0 h-12 w-18 p-4">
+    <button class="moon focus:outline-none">&#127770;</button>
+</div>
+
+<div class="absolute top-0 right-0 h-12 w-18 p-4">
+    <button class="sun focus:outline-none">&#9728;&#65039;</button>
+</div> -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="./script2.js"></script>
       
-<!-- pins the switch to the top right -->
-        <div class="absolute top-0 right-0 h-12 w-18 p-4">
-          <button class="theme-changer focus:outline-none">🌙</button>
-        </div>
-  
-  
-       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-       <script src="./script2.js"></script>
-      
-  </body>
-  
-  </html>
+</body>
+</html>

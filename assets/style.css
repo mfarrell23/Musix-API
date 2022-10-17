@@ -3,12 +3,13 @@
 }
 
 h1,
-.title {
+.title,
+#back {
     font-family: 'Chakra Petch', sans-serif;
 }
 
 
-#results{
+#results {
     padding-left: 3rem;
     width: 25%;
     padding-left: 10rem;
